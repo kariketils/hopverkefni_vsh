@@ -5,6 +5,36 @@ body {
 .page-header {
   height: 175px;
   background-image: url("./myndir/ratm.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: black;
+background-size: 100%;}
 
 /*# sourceMappingURL=stilsida.css.map */
+
+body{
+	width: 75em;
+	margin-left: 30em;
+	margin-right: 30em;
+	margin-top: 2em;
+}
+.font1{
+	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
+	color: red;
+	margin:2em;
+}
+article{
+	float: left;
+	width: 60%;
+}
+aside{float: left;
+	width: 40%;
+}
+footer{
+	position:absolute;
+   		bottom:0;
+	display: block;
+	background-color: black;
+	color: white;
+	width: 75em;
+	border-radius: 10px;
+}
