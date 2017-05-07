@@ -21,10 +21,10 @@ font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera
 
 }
 table {
-	float: left;
+
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 40%;
+    width: 60%;
 }
 
 td, th {
@@ -35,4 +35,23 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+aside{margin-bottom: 20Em;
+	float: right;
+	width: 50%;
+	border: solid black;
+	border-radius: 10px;
+	background-color:black;
+	color: white;
+	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; 
+}
+footer{
+	float: bottom;
+	position:absolute;
+   		bottom:0;
+	display: block;
+	background-color: black;
+	color: white;
+	width: 75em;
+	border-radius: 10px;
 }
