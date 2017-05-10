@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php session_start();
+inclued_get_data(\utsdata\2T\2603982459\lokaverkefni_php\index.php)?>
 <html>
 <head>
 	<title></title>
@@ -121,6 +123,22 @@ endif;
 
 </div> <!-- / top -->
 </div> <!--panel -->
+<div class="pageContent">
+
+<div id="main">
+
+<div class="container">
+<h1>A Cool Login System</h1>
+<h2>Easy registration management with PHP &amp; jQuery</h2>
+</div>
+
+<div class="container">
+<p>This is a ...</p>
+<div class="clear"></div>
+
+</div>
+
+</div>
 
 
 
