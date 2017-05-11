@@ -5,7 +5,7 @@ if(isset($save))
 
 	if($e=="" || $p=="")
 	{
-	$err="<font color='red'>fill all the fileds first</font>";	
+	$err="<font color='red'>muna að setja í alla glugga</font>";	
 	}
 	else
 	{
@@ -24,13 +24,19 @@ header('location:user');
 else
 {
 
-$err="<font color='red'>Invalid login details</font>";
+$err="<font color='red'>innskráning tókst ekki!</font>";
 
 }
 }
 }
 
 ?>
+
+
+
+
+
+
 <h2>Login Form</h2>
 <form method="post">
 	
@@ -42,13 +48,13 @@ $err="<font color='red'>Invalid login details</font>";
 	
 	
 	<div class="row">
-		<div class="col-sm-4">Enter YOur Email</div>
+		<div class="col-sm-4">Póstfang</div>
 		<div class="col-sm-5">
 		<input type="email" name="e" class="form-control"/></div>
 	</div>
 	
 	<div class="row">
-		<div class="col-sm-4">Enter YOur Password</div>
+		<div class="col-sm-4">Lykilorð</div>
 		<div class="col-sm-5">
 		<input type="password" name="p" class="form-control"/></div>
 	</div>

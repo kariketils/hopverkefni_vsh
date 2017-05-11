@@ -1,5 +1,6 @@
 <?php 
 include('connection.php');
+include('timit.php');
 session_start();
  ?>
 <html>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,oFAA4E;AAEpF,IAAI;EAEH,gBAAgB,EAAE,IAAI;;AAEvB,YAAY;EACX,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,wBAAwB;EAC1C,iBAAiB,EAAE,SAAS",
+"sources": ["stilsida.scss"],
+"names": [],
+"file": "stilsida.css"
+}

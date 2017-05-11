@@ -10,7 +10,7 @@ $r=mysqli_num_rows($sql);
 
 if($r==true)
 {
-$err= "<font color='red'>This user already exists</font>";
+$err= "<font color='red'>þettar er nú þegar til</font>";
 }
 else
 {
@@ -46,7 +46,17 @@ $err="<font color='blue'>Registration successfull !!</font>";
 
 
 ?>
-<h2>Registration Form</h2>
+
+
+
+
+
+
+
+
+
+
+<h2>Innsláttar From</h2>
 		<form method="post" enctype="multipart/form-data">
 			<table class="table table-bordered">
 	<Tr>
@@ -54,53 +64,53 @@ $err="<font color='blue'>Registration successfull !!</font>";
 	</Tr>
 				
 				<tr>
-					<td>Enter Your name</td>
+					<td>Nafn</td>
 					<Td><input  type="text"  class="form-control" name="n" required/></td>
 				</tr>
 				<tr>
-					<td>Enter Your email </td>
+					<td>Netfang </td>
 					<Td><input type="email"  class="form-control" name="e" required/></td>
 				</tr>
 				
 				<tr>
-					<td>Enter Your Password </td>
+					<td>lykilorð</td>
 					<Td><input type="password"  class="form-control" name="p" required/></td>
 				</tr>
 				
 				<tr>
-					<td>Enter Your Mobile </td>
+					<td>símanúmer </td>
 					<Td><input  class="form-control" type="number" name="mob" required/></td>
 				</tr>
 				
 				<tr>
-					<td>Select Your Gender</td>
+					<td>kyn</td>
 					<Td>
-				Male<input type="radio" name="gen" value="m" required/>
-				Female<input type="radio" name="gen" value="f"/>	
+				KK<input type="radio" name="gen" value="m" required/>
+				KVK<input type="radio" name="gen" value="f"/>	
 					</td>
 				</tr>
 				
 				<tr>
-					<td>Choose Your hobbies</td>
+					<td>áhugamál</td>
 					<Td>
-					Reading<input value="reading" type="checkbox" name="hob[]"/>
-					Singing<input value="singin" type="checkbox" name="hob[]"/>
+					lesa<input value="reading" type="checkbox" name="hob[]"/>
+					spila<input value="singin" type="checkbox" name="hob[]"/>
 					
-					Playing<input value="playing" type="checkbox" name="hob[]"/>
+					leika<input value="playing" type="checkbox" name="hob[]"/>
 					</td>
 				</tr>
 				
 				
 				<tr>
-					<td>Upload  Your Image </td>
+					<td>Slóð myndar </td>
 					<Td><input class="form-control" type="file" name="img" required/></td>
 				</tr>
 				
 				<tr>
-					<td>Enter Your DOB</td>
+					<td>fæðingardagur</td>
 					<Td>
 					<select name="yy" required>
-					<option value="">Year</option>
+					<option value="">Ár</option>
 					<?php 
 					for($i=1950;$i<=2016;$i++)
 					{
@@ -111,7 +121,7 @@ $err="<font color='blue'>Registration successfull !!</font>";
 					</select>
 					
 					<select name="mm" required>
-					<option value="">Month</option>
+					<option value="">Mánuður</option>
 					<?php 
 					for($i=1;$i<=12;$i++)
 					{
@@ -123,7 +133,7 @@ $err="<font color='blue'>Registration successfull !!</font>";
 					
  					
 					<select name="dd" required>
-					<option value="">Date</option>
+					<option value="">dagur</option>
 					<?php 
 					for($i=1;$i<=31;$i++)
 					{
