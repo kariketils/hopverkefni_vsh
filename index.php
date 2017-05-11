@@ -1,13 +1,4 @@
-<?php 
-
-         include_once "mysql_connect.php"; 
-          mysql_query("UPDATE views SET 'views' = 'views'+1 WHERE id='1'");
-        $sql = mysql_query("SELECT * FROM views WHERE id='1'");
-        while ($row = mysql_fetch_array($sql)) {
-          $id = $row["id"];
-          $pagename = $row["pagename"];
-          $views = $row["views"];
-}; ?>
+<?php include("mysql_connect.php") ?>
 
 <!DOCTYPE html>
 <html>
@@ -17,20 +8,49 @@
   <link rel="auka.css">
 </head>
 <body id="frm">
-    <div >
-      <form action="demo.php" method="POST">
-        <p>
-          <label>Username:</label>
-          <input type="text" name="user" id="user"  />
-        </p>
-        <p>
-          <label>Password:</label>
-          <input type="password" name="pass" id="pass"  />
-        </p>
-        <p>
-            <input type="submit" id="btn" value="login"   />
-        </p>
-      </form>
+   <div class="container">
+  <div class="row">
+
+    <div class="col-sm-8">
+    <?php 
+    @$opt=$_GET['option'];
+    
+    if($opt!="")
+    {
+      if($opt=="about")
+      {
+      include('about.php');
+      }
+      else if($opt=="contact")
+      {
+      include('contact.php');
+      }
+      
+      else if($opt=="New_user")
+      {
+      include('registration.php');
+      }
+      
+      
+      else if($opt=="login")
+      {
+      include('demo.php');
+      }
+    }
+    else
+    {
+    echo "<h2></h2>
+    Welcome 
+    Welcome user Welcome user Welcome user Welcome user Welcome user Welcome user user 
+        Welcome 
+    Welcome user Welcome user Welcome user Welcome user Welcome user Welcome user user";
+    }
+    include("timit.php");
+    ?>
+    
+    
+    
+    
     </div>
     <br />
     <br />
@@ -38,7 +58,6 @@
     <br />
 
 
-<h1>Það hafa = <?php print $views; ?> margir opnað/notað <?php print $pagename; ?> Síðuna</h1>
     
 </body>
 </html>
